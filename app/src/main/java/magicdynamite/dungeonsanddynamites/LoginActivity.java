@@ -1,4 +1,8 @@
 package magicdynamite.dungeonsanddynamites;
+/**
+ * author Shanade Beharry, Maxwell Crawford and Ronald Chaplin
+ * Magic Dynamite
+ */
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -12,6 +16,11 @@ import android.widget.Toast;
 
 import static android.R.color.white;
 
+/**
+ * Login Activity class connects to the database and allows the user to either log in to access their characters
+ * or to Register and create an account which then adds it to the database.
+ *
+ */
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener{
 
     final EditText playerid = (EditText) findViewById(R.id.playerid);
@@ -36,13 +45,15 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
 
         loginbtn.setOnClickListener(LoginActivity.this);
-
-
+        btnregister.setOnClickListener(LoginActivity.this);
     }
 
-        public void onClick(View v){
+    /**
+     * When a button is clicked there is a reaction.
+     * @param v this is the view that is going into the event listener.
+     */
+    public void onClick(View v){
             Intent registerIntent = new Intent(LoginActivity.this, RegisterActivity.class);
-            //LoginActivity.this.startActivity(registerIntent);
 
             Intent userareaintent= new Intent(LoginActivity.this, UserAreaActivity.class);
 
@@ -68,7 +79,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     Toast.makeText(this, "Invalid ID",Toast.LENGTH_SHORT).show();
                 }
 
-
+            }
+            else if(v== btnregister)
+            {
+                LoginActivity.this.startActivity(registerIntent);
             }
         }
 
