@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/DnDbackground"
+    tools:context="magicdynamite.dungeonsanddynamites.LoginActivity">
+
+    <EditText
+        android:id="@+id/playerid"
+        android:layout_width="354dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:hint="Player ID"
+        android:textColorHint="#FFFFFF"
+        android:inputType="number"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/dmswitch1"
+        android:layout_width="170dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="127dp"
+        android:text="Dungeon Master"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="144dp"
+        android:layout_height="63dp"
+        android:text="Login"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/dmswitch1" />
+
+    <Button
+        android:id="@+id/btnregister"
+        android:layout_width="144dp"
+        android:layout_height="63dp"
+        android:text="Register"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="170dp" />
+
+</android.support.constraint.ConstraintLayout>
