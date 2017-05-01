@@ -7,34 +7,35 @@
     tools:context="magicdynamite.dungeonsanddynamites.RegisterActivity">
 
     <EditText
-        android:id="@+id/dpname"
+        android:id="@+id/charclass"
         android:layout_width="354dp"
         android:layout_height="44dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="79dp"
+        android:ems="10"
+        android:hint="Character Class"
+        android:inputType="textPersonName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/charclass"
+        android:layout_width="354dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:hint="Display Name"
         android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="84dp" />
-
-    <EditText
-        android:id="@+id/name"
-        android:layout_width="354dp"
-        android:layout_height="44dp"
-        android:ems="10"
-        android:hint="Name"
-        android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="15dp"
-        tools:layout_editor_absoluteY="25dp" />
-
-    <EditText
-        android:id="@+id/age"
-        android:layout_width="352dp"
-        android:layout_height="46dp"
-        android:ems="10"
-        android:hint="Age"
-        android:inputType="number"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="139dp" />
+        app:layout_constraintBottom_toTopOf="@+id/charclass"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Switch
         android:id="@+id/DMswitch"
@@ -42,7 +43,7 @@
         android:layout_height="30dp"
         android:text="Dungeon Master"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="197dp" />
+        tools:layout_editor_absoluteY="194dp" />
 
     <Button
         android:id="@+id/btnregister"

@@ -15,7 +15,7 @@ public class RegisterActivity extends AppCompatActivity {
 
         final EditText age= (EditText) findViewById(R.id.age);
         final EditText name= (EditText) findViewById(R.id.name);
-        final EditText dpname= (EditText) findViewById(R.id.dpname);
+        final EditText dpname= (EditText) findViewById(R.id.charclass);
         final Switch DMswitch= (Switch) findViewById(R.id.DMswitch);
         final Button btnregister= (Button) findViewById(R.id.btnregister);
     }
