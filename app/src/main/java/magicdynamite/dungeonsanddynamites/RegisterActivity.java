@@ -8,6 +8,10 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Switch;
 
+/**
+ * RegisterActivity connects the user to the database by allowing them to create a new character and then
+ * the database automatically assigns a new player id for the new user.
+ */
 public class RegisterActivity extends AppCompatActivity implements View.OnClickListener{
 
     final EditText charclass= (EditText) findViewById(R.id.charclass); //Character class

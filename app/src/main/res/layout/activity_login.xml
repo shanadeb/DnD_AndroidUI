@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/thebackground"
+
     tools:context="magicdynamite.dungeonsanddynamites.LoginActivity">
 
     <EditText
@@ -16,7 +16,7 @@
         android:layout_marginTop="50dp"
         android:ems="10"
         android:hint="Player ID"
-        android:textColorHint="#FFFFFF"
+
         android:inputType="number"
         android:textColor="@android:color/background_light"
         app:layout_constraintLeft_toLeftOf="parent"
